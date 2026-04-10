@@ -1,8 +1,19 @@
+import { LandmarkIcon } from "lucide-react";
+import { LoginForm } from "./login-form";
+
 export default function LoginPage() {
   return (
-    <div className="rounded-lg border bg-white p-8 shadow-sm dark:border-gray-800 dark:bg-gray-900">
-      <h1 className="mb-6 text-2xl font-bold">Sign In</h1>
-      <p className="text-gray-500 dark:text-gray-400">Login page placeholder</p>
+    <div className="rounded-lg border bg-card p-8 shadow-sm">
+      <div className="mb-6 flex flex-col items-center gap-2">
+        <div className="flex size-10 items-center justify-center rounded-lg bg-primary text-primary-foreground">
+          <LandmarkIcon className="size-5" />
+        </div>
+        <h1 className="text-2xl font-bold">Mai Lending</h1>
+        <p className="text-sm text-muted-foreground">
+          Sign in to your account
+        </p>
+      </div>
+      <LoginForm />
     </div>
   );
 }
